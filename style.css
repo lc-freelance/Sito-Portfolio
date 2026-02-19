@@ -1,0 +1,351 @@
+/*         #282831 (il blue più chiaro)
+           hsl(240, 16%, 11%) (il blu più scuro)
+           #FFFFFF white
+           #35b444 verde */
+
+body {
+  background-color: #282832;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Italic-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Italic-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-VariableFont_wght.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.header-container {
+  background-color: #282832;
+  padding: 15px 25px 60px;
+}
+header {
+  box-shadow: 0px 5px 10px #ffffff;
+  background-color: hsl(240, 16%, 11%);
+  border-radius: 5px;
+  padding: 9%;
+  animation: slideGhost 1s ease-out;
+}
+@keyframes slideGhost {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero a {
+  font-size: 1.5em;
+  color: #35b444;
+  text-decoration: none;
+  animation: slideGhost 2s ease-out;
+}
+.hero p {
+  font-size: 1.5em;
+}
+.hero h1 {
+  font-size: 5em;
+  font-weight: 600;
+}
+.hero-text h1 {
+  animation: slideLeft1 0.5s ease-out;
+}
+@keyframes slideLeft1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-text p {
+  animation: slideLeft2 1s ease-out;
+}
+@keyframes slideLeft2 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-image {
+  animation: slideRight 1s ease-out;
+}
+@keyframes slideRight {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.call-to-action a {
+  display: inline-block;
+  background-color: #35b444;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #282832;
+  animation: opacity 1s ease-out;
+  transition: transform 0.3s ease;
+}
+.call-to-action a:hover {
+  transform: scale(1.1);
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.portfolio {
+  text-align: center;
+  background-color: #282832;
+  padding: 60px 0;
+}
+.section-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0 0 30px;
+}
+.portfolio-container {
+  margin: 2em 10em 2em 30em;
+  display: grid;
+}
+.card {
+  width: fit-content;
+}
+.card-content {
+  background-color: hsl(240, 16%, 11%);
+  width: 270px;
+  height: fit-content;
+  border: 10px solid hsl(240, 16%, 11%);
+  border-radius: 10px;
+  text-align: center;
+}
+.card-content img {
+  box-shadow: 0px 5px 10px #ffffff;
+  width: 100%;
+  height: 200px;
+}
+.card-content p {
+  font-size: 1em;
+}
+.card-content h3 {
+  color: #35b444;
+  font-size: 1.1em;
+  margin-left: 30%;
+  width: 100px;
+}
+.card-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card-text {
+  text-align: start;
+  margin: 10px;
+}
+.card-content,
+.servizi,
+#contatti {
+  transition-property: all;
+  transition-duration: 1s;
+}
+.card-content:hover,
+.servizi:hover,
+#contatti:hover {
+  scale: 1.1;
+}
+
+.skills {
+  box-sizing: content-box;
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+  background-color: hsl(240, 16%, 11%);
+}
+.skills h2 {
+  color: #ffffff;
+}
+.card-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.servizi {
+  background-color: #282832;
+  display: grid;
+  text-align: center;
+  border: #ffffff solid 3px;
+  box-shadow: 0 5px 10px #ffffff;
+  border-radius: 50px;
+  margin: 30px;
+  padding: 20px;
+  gap: 10px;
+}
+.servizi p {
+  font-size: 1.3em;
+}
+.servizi h3 {
+  font-size: 1.5em;
+}
+.contact {
+  background-color: hsl(240, 16%, 11%);
+  text-align: center;
+  padding: 150px 20px 70px;
+}
+.contact h4 {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.contact p {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+footer {
+  color: #ffffff;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer a {
+  color: #282832;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #35b444;
+}
+#contatti {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  color: #282832;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.social-bar {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.footer-text {
+  font-size: 0.9em;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* Responsive Mobile */
+@media (min-width: 320px) and (max-width: 870px) {
+  .header-container {
+    padding: 5px;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .card {
+    margin: auto;
+    width: min-content;
+  }
+  #contatti {
+    width: 95%;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1024px) {
+  .header-container {
+    background-color: hsl(240, 16%, 11%);
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero p {
+    font-size: 1.1em;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .skills {
+    margin-top: 60px;
+  }
+  .card-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contatti {
+    width: 90%;
+    margin: 40px auto 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    gap: 10px;
+  }
+}
