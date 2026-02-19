@@ -21,18 +21,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: url("../font/Montserrat-Italic-VariableFont_wght.ttf") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../font/Montserrat-VariableFont_wght.ttf") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 .header-container {
   background-color: #282832;
   padding: 15px 25px 60px;
