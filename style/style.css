@@ -131,10 +131,13 @@ header {
 }
 .portfolio-container {
   margin: 2em 10em 2em 30em;
-  display: grid;
 }
 .card {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
   width: fit-content;
+  gap: 5rem;
 }
 .card-content {
   background-color: hsl(240, 16%, 11%);
@@ -286,6 +289,8 @@ footer a:hover {
   .card {
     margin: auto;
     width: min-content;
+    display: flex;
+    flex-direction: column;
   }
   #contatti {
     width: 95%;
