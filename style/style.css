@@ -3,6 +3,9 @@
            #FFFFFF white
            #35b444 verde */
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #282832;
   color: #ffffff;
