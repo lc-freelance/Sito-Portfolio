@@ -262,8 +262,7 @@ ul {
   gap: 1.2rem;
   transition: all 0.3s ease-in-out;
 }
-.icon {
-  color: var(--Color-CTA);
+.emoji {
   padding: 0.5rem;
 }
 .servizi-item h3 {
