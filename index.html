@@ -24,6 +24,8 @@
       href="./image/favicon-16x16.png"
     />
     <link rel="apple-touch-icon" href="./image/apple-touch-icon.png" />
+    <!-- Inserire canonical dopo dominio -->
+    <link rel="canonical" href="" />
     <link rel="stylesheet" href="./style/style.css" />
 
     <!-- Social SEO -->
@@ -34,261 +36,292 @@
       property="og:description"
       content="Stai cercando una presenza online semplice e professionale? Posso aiutarti ad ottenerla, visita il mio sito e chiedimi una consulenza gratuita."
     />
-    <meta property="og:image" content="./image/hero-image-social.jpg" />
+    <!-- Inserire img & url dopo dominio -->
+    <meta property="og:image" content="" />
     <meta property="og:url" content="" />
     <meta property="og:sitename" content="Luigi Castiello | Web Developer" />
     <meta property="og:locale" content="it_IT" />
-
   </head>
   <body>
-    <div class="header-container">
-      <header role="banner">
-        <div class="hero">
-          <div class="hero-text">
-            <h1>Ciao!</h1>
-            <p>
-              Mi chiamo Luigi e sono un web developer. Mi occupo di creare siti
-              web semplici, accessibili e funzionali, con attenzione ai dettagli
-              e alle migliori pratiche. Che tu abbia bisogno di un nuovo sito su
-              misura o di migliorare l'accessibilità di uno esistente, posso
-              aiutarti a realizzare un progetto pulito e professionale.
-            </p>
-            <p>Per saperne di più...</p>
-            <span class="call-to-action"
-              ><a href="#contatti">Contattami!</a></span
-            >
-          </div>
-          <div class="hero-image">
-            <picture>
-              <source srcset="./image/hero-image.avif" type="image/avif" />
-              <source srcset="./image/hero-image.webp" type="image/webp" />
-              <img
-                src="./image/hero-image.jpg"
-                alt="Immagine di sfondo"
-                title="Hero Image"
-                width="500"
-                height="500"
-                draggable="false"
-              />
-            </picture>
-          </div>
+    <!-- HERO Section -->
+    <header>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Hai bisogno di una presenza online?</h1>
+          <p class="hero-text a">
+            Creo siti web e landing page veloci, accessibili e ottimizzati per i
+            motori di ricerca, per professionisti e attività locali.
+          </p>
+          <p class="hero-text b">
+            Creo la soluzione per te partendo sempre da come tu immagini il tuo
+            sito: niente template, niente scorciatoie.
+          </p>
+          <a class="hero-cta" href="#contatti">Parliamone →</a>
         </div>
-      </header>
-    </div>
+        <div class="hero-image">
+          <picture>
+            <source srcset="./image/hero-image.avif" type="image/avif" />
+            <source srcset="./image/hero-image.webp" type="image/webp" />
+            <img
+              src="./image/hero-image.jpg"
+              alt="Il mio logo"
+              width="500"
+              height="500"
+              draggable="false"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
     <main>
-      <section class="portfolio">
-        <div class="section-text">
-          <h2>I miei lavori</h2>
-        </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio">
         <div class="portfolio-container">
-          <div class="card">
-            <div class="card-content">
-              <a
-                href=" https://lc-freelance.github.io/Progetto-1---Sito-Street-Food-Fittizio/"
-                aria-label="Vai al progetto 1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <picture>
-                  <source
-                    srcset="./image/project-2-screen.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./image/project-2-screen.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./image/project-2-screen.jpg"
-                    alt="Il mio primo progetto"
-                    title="Progetto 1"
-                    width="500"
-                    height="auto"
-                    draggable="false"
-                    loading="lazy"
-                  />
-                </picture>
-              </a>
+          <div class="portfolio-text">
+            <h2>I miei lavori</h2>
+          </div>
+          <div class="card-container">
+            <div class="card-item">
+              <div class="card-image">
+                <span class="badge">Progetto reale</span>
+                <a
+                  href="https://antoniostellato.it/"
+                  aria-label="Visita il sito (si apre in un'altra pagina)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><picture>
+                    <source
+                      srcset="./image/progetto-fisio-stellato.avif"
+                      type="image/avif" />
+                    <source
+                      srcset="./image/progetto-fisio-stellato.webp"
+                      type="image/webp" />
+                    <img
+                      src="./image/progetto-fisio-stellato.jpg"
+                      alt="Screen del mio primo sito reale"
+                      width="270"
+                      height="150"
+                      draggable="false"
+                      loading="lazy" /></picture
+                ></a>
+              </div>
               <div class="card-text">
-                <h3>Street Food</h3>
+                <h3>Fisio Stellato</h3>
                 <p>
-                  Il mio primo progetto è dedicato ad uno street food fittizio,
-                  progettato per presentare il prodotto in modo chiaro e
-                  immediato. Il design riprende i colori del prodotto ed è
-                  ottimizzato per prestazioni, accessibilità e responsive su
-                  tutti i dispositivi.
+                  Landing page per un fisioterapista reale. Presenza online
+                  completa, ottimizzata per Google e pensata per ricevere
+                  contatti direttamente via WhatsApp.
                 </p>
               </div>
             </div>
-            <div class="card-content">
-              <a
-                href="https://lc-freelance.github.io/Progetto-2---Sito-Parrucchiere-Fittizio/"
-                aria-label="Vai al progetto 2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <picture>
-                  <source
-                    srcset="./image/project-3-screen.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./image/project-3-screen.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./image/project-3-screen.jpg"
-                    alt="Il mio secondo progetto"
-                    title="Progetto 2"
-                    width="500"
-                    height="auto"
-                    draggable="false"
-                    loading="lazy"
-                  />
-                </picture>
-              </a>
+            <div class="card-item">
+              <div class="card-image">
+                <a
+                  href="https://lc-freelance.github.io/Progetto-1---Sito-Street-Food-Fittizio/"
+                  aria-label="Visita il sito (si apre in un'altra pagina)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><picture>
+                    <source
+                      srcset="./image/progetto-fittizio-ristorazione.avif"
+                      type="image/avif" />
+                    <source
+                      srcset="./image/progetto-fittizio-ristorazione.webp"
+                      type="image/webp" />
+                    <img
+                      src="./image/progetto-fittizio-ristorazione.jpg"
+                      alt="Screen di un sito fittizio"
+                      width="270"
+                      height="150"
+                      draggable="false"
+                      loading="lazy" /></picture
+                ></a>
+              </div>
+              <div class="card-text">
+                <h3>Ristorazione</h3>
+                <p>
+                  Sito a due pagine per pizzeria street food: homepage con menu,
+                  chi siamo e contatti, più pagina menù dedicata. Pulsante
+                  WhatsApp per prenotare direttamente. Ottimizzato per mobile.
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-image">
+                <a
+                  href="https://lc-freelance.github.io/Progetto-2---Sito-Parrucchiere-Fittizio/"
+                  aria-label="Visita il sito (si apre in un'altra pagina)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><picture>
+                    <source
+                      srcset="./image/progetto-fittizio-parrucchiere.avif"
+                      type="image/avif" />
+                    <source
+                      srcset="./image/progetto-fittizio-parrucchiere.webp"
+                      type="image/webp" />
+                    <img
+                      src="./image/progetto-fittizio-parrucchiere.jpg"
+                      alt="Screen di un sito fittizio"
+                      width="270"
+                      height="150"
+                      draggable="false"
+                      loading="lazy" /></picture
+                ></a>
+              </div>
               <div class="card-text">
                 <h3>Parrucchiere</h3>
                 <p>
-                  Il mio secondo progetto è dedicato ad un parrucchiere
-                  fittizio, progettato per presentare il brand in modo chiaro e
-                  immediato. Il design è elegante e richiama i colori del brand.
-                  Il sito è ottimizzato per prestazioni, accessibilità e
-                  responsive su tutti i dispositivi.
+                  Landing page completa per salone di parrucchiere: hero, chi
+                  siamo, listino prezzi, galleria con immagini IA e contatti.
+                  Struttura semplice e aggiornabile nel tempo.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="skills">
-        <div class="section-text">
+      <!-- Servizi Section -->
+      <section class="servizi">
+        <div class="servizi-text">
           <h2>I miei servizi</h2>
         </div>
-        <div class="skills-container">
-          <div class="card-skills">
-            <div class="servizi">
-              <h3>Siti web statici e responsive</h3>
-              <p>
-                Creo siti web semplici e accessibili, pensati per promuovere
-                servizi e attività su ogni dispositivo.
-              </p>
-            </div>
-            <div class="servizi">
-              <h3>Landing page</h3>
-              <p>
-                Creo landing page efficaci e ottimizzate per promuovere un
-                servizio o acquisire contatti.
-              </p>
-            </div>
-            <div class="servizi">
-              <h3>Ottimizzazione pagine esistenti</h3>
-              <p>
-                Miglioro la struttura, aspetto e l'accessibilità di siti già
-                esistenti applicando regole SEO basilari.
-              </p>
-            </div>
+        <div class="servizi-container">
+          <div class="servizi-item">
+            <h3>Siti web</h3>
+            <p>
+              Costruisco siti web su misura, senza template. Ogni progetto parte
+              da come tu immagini la tua presenza online.
+            </p>
+          </div>
+          <div class="servizi-item">
+            <h3>Landing page</h3>
+            <p>
+              Una pagina pensata per convertire: chi sei, cosa fai, come
+              contattarti. Semplice, veloce e ottimizzata per Google.
+            </p>
+          </div>
+          <div class="servizi-item">
+            <h3>Ottimizzazione pagine</h3>
+            <p>
+              Hai già un sito ma non ti convince? Miglioro struttura, velocità e
+              visibilità sui motori di ricerca.
+            </p>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <div class="section-text">
-          <h4>Hai bisogno di informazioni?</h4>
+      <!-- Section Contatti -->
+      <section class="contact" id="contatti">
+        <div class="contact-text">
+          <h3>Hai un progetto in mente?</h3>
+          <p>Raccontami la tua idea - rispondo entro 24 ore.</p>
+          <span class="arrow">
+            <img
+              src="./image/arrow-down-svgrepo-com.svg"
+              alt="Freccia verso il basso"
+              width="30"
+              height="30"
+              draggable="false"
+            />
+          </span>
         </div>
-        <p>Contattami per una consulenza gratuita!</p>
-        <span class="arrow">
-          <img
-            src="./image/arrow-down-svgrepo-com.svg"
-            alt="Freccia verso il basso"
-            width="30"
-            height="30"
-            draggable="false"
-          />
-        </span>
-      </section>
-    </main>
-    <footer class="footer">
-      <address id="contatti">
-        <ul>
-          <li>Luigi Castiello</li>
-          <li>
-            Email:
-            <a
-              href="mailto:luigi.castiello.freelance@gmail.com?subject=Richiesta%20informazioni&body=Ciao%2C%20vorrei%20ricevere%20informazioni%20aggiuntive%20in%20merito%20ai%20servizi..."
-              >luigi.castiello.freelance@gmail.com</a
-            >
-          </li>
-          <li>Telefono:<a href="tel:+3932482181825"> +39 324 821 818 25</a></li>
-        </ul>
-        <ul class="social-bar">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/luigi-castiello-freelance-aa153b392"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Il mio profilo linkedin (si apre in una nuova scheda)"
-              title="LinkedIn"
-              ><img
-                src="./image/linkedin-svgrepo-com.svg"
-                alt="icona linkedin"
-                height="20"
-                width="20"
-                draggable="false"
-                loading="lazy"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/lc-freelance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Il mio profilo github (si apre in una nuova scheda)"
-              title="GitHub"
-              ><img
-                src="./image/github-svgrepo-com.svg"
-                alt="icona github"
-                height="20"
-                width="20"
-                draggable="false"
-                loading="lazy"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.tiktok.com/@lc.wbdev?is_from_webapp=1&sender_device=pc"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Il mio profilo tiktok (si apre in una nuova scheda)"
-              title="TikTok"
-              ><img
+        <div class="contact-details">
+          <address>
+            <!-- Contatti personali -->
+            <ul>
+              <li>Luigi Castiello</li>
+              <li>
+                Email:
+                <a
+                  href="mailto:luigi.castiello.freelance@gmail.com?subject=Richiesta%20informazioni&body=Ciao%2C%20vorrei%20ricevere%20informazioni%20aggiuntive%20in%20merito%20ai%20servizi..."
+                  >luigi.castiello.freelance@gmail.com</a
+                >
+              </li>
+              <li>
+                Scrivimi su:<a
+                  href="https://wa.me/393248218285?text=Ciao%20Luigi%2C%20vorrei%20ricevere%20informazioni%20sui%20tuoi%20servizi"
+                  >WhatsApp</a
+                >
+              </li>
+            </ul>
+            <!-- Social List -->
+            <div class="social-bar">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/luigi-castiello-freelance-aa153b392"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Il mio profilo linkedin (si apre in una nuova scheda)"
+                    title="LinkedIn"
+                    ><img
+                      src="./image/linkedin-svgrepo-com.svg"
+                      alt="icona linkedin"
+                      height="30"
+                      width="30"
+                      draggable="false"
+                      loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/lc-freelance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Il mio profilo github (si apre in una nuova scheda)"
+                    title="GitHub"
+                    ><img
+                      src="./image/github-svgrepo-com.svg"
+                      alt="icona github"
+                      height="30"
+                      width="30"
+                      draggable="false"
+                      loading="lazy"
+                  /></a>
+                </li>
+                <!-- SOCIAL TIK TOK & INSTAGRAM per ora FREEZE -->
+                <!-- <li>
+                <a
+                href="https://www.tiktok.com/@lc.wbdev?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Il mio profilo tiktok (si apre in una nuova scheda)"
+                title="TikTok"
+                ><img
                 src="./image/tiktok-svgrepo-com.svg"
                 alt="icona tiktok"
                 height="20"
                 width="20"
                 draggable="false"
                 loading="lazy"
-              />
-            </a>
-          </li>
-          <li>
-            <a
+                />
+              </a>
+            </li>
+            <li>
+              <a
               href="https://www.instagram.com/lc.webdev/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Il mio profilo instagram (si apre in una nuova scheda)"
               title="Instagram"
               ><img
-                src="./image/instagram-svgrepo-com.svg"
-                alt="icona instagram"
-                height="20"
-                width="20"
-                draggable="false"
-                loading="lazy"
+              src="./image/instagram-svgrepo-com.svg"
+              alt="icona instagram"
+              height="20"
+              width="20"
+              draggable="false"
+              loading="lazy"
               />
             </a>
-          </li>
-        </ul>
-      </address>
+          </li> -->
+              </ul>
+            </div>
+          </address>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
       <div class="footer-text">
         <p>&copy; 2026 Luigi Castiello. Tutti i diritti riservati.</p>
       </div>
