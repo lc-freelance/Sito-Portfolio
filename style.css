@@ -324,9 +324,20 @@ ul {
 .contact-details a:hover {
   color: var(--Color-CTA);
 }
-.footer {
+.footer-text {
   text-align: center;
   padding: 1rem 1.5rem 2rem;
+}
+.footer-text a,
+p {
+  padding: 0.5rem 1.5rem;
+}
+.footer-text a:hover {
+  color: var(--Color-CTA);
+}
+.privacy {
+  display: flex;
+  flex-direction: column;
 }
 
 /* TABLET 768px */
@@ -362,6 +373,12 @@ ul {
   /* Contatti Section */
   .contact-details {
     padding: 0 4rem;
+  }
+
+  .privacy {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
